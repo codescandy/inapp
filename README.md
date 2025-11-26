@@ -1,0 +1,2 @@
+# inapp
+inventory app template
