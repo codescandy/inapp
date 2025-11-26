@@ -1,0 +1,47 @@
+
+.navbar-custom {
+  background-color: $white;
+  .navbar-nav{
+    line-height: 1;
+  .nav-item{
+   
+    .nav-link{
+      font-size: .875rem;
+      text-transform: uppercase;
+      padding: .75rem 1rem;
+      
+      
+    color: $gray-700;;
+      font-weight: 500;
+      &:hover {
+        color: $gray-900;
+      }
+    }
+  }
+}
+}
+
+.text-xs {
+  font-size: $font-xs;
+}
+
+.btn-icon{
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  color: $gray-600;
+  .ft-links{
+    color: $gray-600;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+
+
+@import "./utilities"
