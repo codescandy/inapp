@@ -11,8 +11,7 @@ $gray-700: #615b51 !default;
 $gray-800: #433e38 !default;
 $gray-900: #211f1c !default;
 $gray-950: #11100e !default;
-$primary: #000;
-$secondary: #d47f31;
+
 $light: $gray-100 !default;
 $border-color: $gray-100 !default;
 $border-color-translucent:   $gray-100 !default;
@@ -70,7 +69,7 @@ $spacers: (
 
 $font-family-base: 'Poppins', sans-serif !default;
 $font-size-root:              null !default;
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .875rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .85 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -94,5 +93,24 @@ $input-btn-padding-x: 1.5rem !default;
 
 
 $link-decoration:                         none !default;
-$link-hover-color:                        $secondary !default;
+
 $link-hover-decoration:                   underline !default;
+
+
+// Icon
+$icon-size-xxs: 1rem !default;
+$icon-size-xs: 1.5rem !default;
+$icon-size-sm: 2rem !default;
+$icon-size-md: 2.5rem !default;
+$icon-size-lg: 3rem !default;
+$icon-size-xl: 3.5rem !default;
+$icon-size-xxl: 4rem !default;
+$icon-size-xxxl: 7rem !default;
+
+// Avatar
+$avatar-size-xs: 1.5rem !default;
+$avatar-size-sm: 2rem !default;
+$avatar-size-md: 2.5rem !default;
+$avatar-size-lg: 3.5rem !default;
+$avatar-size-xl: 5rem !default;
+$avatar-size-xxl: 7.5rem !default;

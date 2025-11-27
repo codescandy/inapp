@@ -1,0 +1,34 @@
+// Border dashed
+
+.border-dashed {
+  --ds-border-style: dashed;
+}
+
+.timeline-vertical {
+  position: relative;
+  .timeline-item {
+    .timeline-bar {
+      position: absolute;
+      height: 100px;
+      left: 5px;
+      top: 24px;
+    }
+  }
+}
+.timeline-vertical-height {
+  .timeline-item {
+    .timeline-bar {
+      height: calc(100% - 1rem) !important;
+    }
+  }
+}
+
+// vr border
+.vr {
+  display: inline-block;
+  align-self: stretch;
+  width: $vr-border-width;
+  min-height: 1em;
+  background-color: var(--#{$prefix}border-color) !important;
+  opacity: $hr-opacity;
+}

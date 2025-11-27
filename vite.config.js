@@ -6,7 +6,7 @@ const htmlFiles = glob.sync('./src/**/*.html')
 
 
 export default defineConfig({
-   base: './', 
+   base: './',
    root: resolve(__dirname, 'src'),   // ✅ keeps dev server working
    server: {
     host: true,
@@ -17,7 +17,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
         scss: {
-          silenceDeprecations: ['mixed-decls', 'color-functions', 'global-builtin', 'import']
+
         },
       }
   },

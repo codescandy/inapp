@@ -14,6 +14,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@tabler/icons": "^3.35.0",
+    "@tabler/icons-webfont": "^3.35.0",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "sass": "1.77.6",
