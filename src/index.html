@@ -132,8 +132,8 @@
   </aside>
 
   <!-- MAIN CONTENT -->
-  <main id="content" class="content px-6 py-10">
-    <div class="container">
+  <main id="content" class="content px-6 px-lg-0 py-10">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <div class="mb-6">
@@ -217,9 +217,9 @@
         </div>
 
       </div>
-      <div class="row g-3">
+      <div class="row g-3 mb-4">
         <div class="col-lg-4 col-12">
-          <div class="card rounded-2">
+          <div class="card">
             <div class="card-body p-4">
               <div class="d-flex justify-content-between border-bottom pb-5 mb-3">
                 <div>
@@ -237,9 +237,9 @@
             </div>
           </div>
 
-        </div> 
+        </div>
         <div class="col-lg-4 col-12">
-          <div class="card rounded-2">
+          <div class="card">
             <div class="card-body p-4">
               <div class="d-flex justify-content-between border-bottom pb-5 mb-3">
                 <div>
@@ -259,7 +259,7 @@
 
         </div>
         <div class="col-lg-4 col-12">
-          <div class="card rounded-2">
+          <div class="card">
             <div class="card-body p-4">
               <div class="d-flex justify-content-between border-bottom pb-5 mb-3">
                 <div>
@@ -267,11 +267,11 @@
                   <span>Total Expenses</span>
                 </div>
                 <div>
-                  <i class="ti ti-cash-banknote fs-1 text-danger"></i>
+                  <i class="ti ti-cash-banknote fs-1 text-warning"></i>
                 </div>
               </div>
               <div class="d-flex justify-content-between align-items-center small">
-                <div class="text-muted"><span class="text-danger">-20%</span> vs Last Month</div>
+                <div class="text-muted"><span class="text-warning">-20%</span> vs Last Month</div>
                 <div><a href="#" class="link-primary">View</a></div>
               </div>
             </div>
@@ -280,7 +280,270 @@
         </div>
 
       </div>
+      <div class="row g-3 mb-4">
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center bg-transparent px-4 py-3">
+                <h3 class="h5 mb-0">Sales vs Purchase</h3>
+                <div>
+                  <select class="form-select form-select-sm">
+                    <option selected>This Year</option>
+                    <option>This Month</option>
+                    <option>This Week</option>
+                  </select>
+                </div>
+              </div>
+            <div class="card-body p-4">
 
+              <div id="salesPurchaseChart"></div>
+            </div>
+          </div>
+      </div>
+
+
+        <div class="col-12 col-lg-6">
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center bg-transparent px-4 py-3">
+                <h3 class="h5 mb-0">Overall Information</h3>
+                <div>
+                  <select class="form-select form-select-sm">
+                    <option selected>Last 6 Months</option>
+                    <option>This Month</option>
+                    <option>This Week</option>
+                  </select>
+                </div>
+              </div>
+            <div class="card-body p-4">
+              <h3 class="h6">Customers Overview</h3>
+              <div class="row align-items-center">
+                <div class="col-sm-6">
+                <div id="customerChart">
+
+                </div>
+</div>
+  <div class="col-sm-6">
+                  <div class="row">
+											<div class="col-sm-6 border-end">
+												<div class="text-center px-4 ">
+													<h2 class="mb-1">5.5K</h2>
+													<p class="text-success mb-2">First Time</p>
+													<span class="badge bg-success"><i class="ti ti-arrow-up-left me-1"></i>25%</span>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="text-center">
+													<h2 class="mb-1">3.5K</h2>
+													<p class="text-warning mb-2">Return</p>
+													<span class="badge bg-success badge-xs d-inline-flex align-items-center"><i class="ti ti-arrow-up-left me-1"></i>21%</span>
+												</div>
+											</div>
+										</div>
+                    </div>
+
+
+              </div>
+              <div class="row text-center border-top mt-4 pt-4">
+                <div class="col-4 border-end">
+                  <h3 class="fw-bold mb-2">6987</h3>
+                  <span class="text-secondary">Suppliers</span>
+                  </div>
+                <div class="col-4 border-end">
+                  <h3 class="fw-bold mb-2">4896</h3>
+                  <span class="text-secondary">Customers</span>
+                </div>
+                <div class="col-4">
+                  <h3 class="fw-bold mb-2">487</h3>
+                  <span class="text-secondary">Orders</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="row g-3">
+
+    <!-- CARD 1 — Top Selling Products -->
+    <div class="col-lg-4">
+      <div class="card  h-100">
+        <div class="card-header bg-white d-flex justify-content-between align-items-center px-4 py-3">
+          <h4 class="mb-0 h5">Top Selling Products</h4>
+          <button class="btn btn-sm btn-outline-secondary">
+            <i class="ti ti-calendar"></i> Today
+          </button>
+        </div>
+
+        <ul class="list-group list-group-flush">
+
+          <!-- item -->
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-1 fw-semibold">Charger Cable - Lighting</p>
+              <div class="d-flex align-items-center gap-2 text-muted">
+              <small class="fw-semibold">$137  </small>
+              <small>•</small>
+              <small>147+ Sales</small>
+              </div>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success">25%</span>
+          </li>
+
+          <!-- repeat -->
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Yves Saint Eau De Parfum</p>
+              <small>$145 • 289+ Sales</small>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success">25%</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Apple Airpods 2</p>
+              <small>$458 • 300+ Sales</small>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success">25%</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Samsung Galaxy S22 Ultra</p>
+              <small>$999 • 150+ Sales</small>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success">25%</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Sony WH-1000XM4 Headphones</p>
+              <small>$349 • 200+ Sales</small>
+            </div>
+            <span class="badge bg-success-subtle text-success border border-success">25%</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CARD 2 — Low Stock Products -->
+    <div class="col-lg-4">
+      <div class="card  h-100">
+        <div class="card-header bg-white d-flex justify-content-between align-items-center px-4 py-3">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-exclamation-triangle-fill text-warning me-2"></i>
+             <h4 class="mb-0 h5">Low Stock Products</h4>
+          </div>
+          <a href="#" class="small text-primary">View All</a>
+        </div>
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Dell XPS 13</p>
+              <small>ID: #665814</small>
+            </div>
+            <span class="fw-semibold text-danger">08</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Vacuum Cleaner Robot</p>
+              <small>ID: #940004</small>
+            </div>
+            <span class="fw-semibold text-danger">14</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">KitchenAid Mixer</p>
+              <small>ID: #325569</small>
+            </div>
+            <span class="fw-semibold text-danger">21</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Nikon D3500 DSLR Camera</p>
+              <small>ID: #778855</small>
+            </div>
+            <span class="fw-semibold text-danger">05</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Fitbit Charge 5</p>
+              <small>ID: #112233</small>
+            </div>
+            <span class="fw-semibold text-danger">12</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CARD 3 — Recent Sales -->
+    <div class="col-lg-4">
+      <div class="card  h-100">
+        <div class="card-header bg-white d-flex justify-content-between align-items-center px-4 py-3">
+          <h4 class="mb-0 h5">Recent Sales</h4>
+          <button class="btn btn-sm btn-outline-secondary">
+            <i class="bi bi-calendar-week"></i> Weekly
+          </button>
+        </div>
+
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Apple Watch Series 9</p>
+              <small>Electronics • $640</small>
+            </div>
+            <span class="badge bg-primary-subtle text-primary">Processing</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Gold Bracelet</p>
+              <small>Fashion • $126</small>
+            </div>
+            <span class="badge bg-danger-subtle text-danger">Cancelled</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Parachute Down Duvet</p>
+              <small>Health • $69</small>
+            </div>
+            <span class="badge bg-success-subtle text-success">Completed</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Sony Alpha a7 III</p>
+              <small>Electronics • $1,998</small>
+            </div>
+            <span class="badge bg-primary-subtle text-primary">Processing</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center gap-3">
+            <img src="https://via.placeholder.com/48" class="rounded" width="48">
+            <div class="flex-grow-1">
+              <p class="mb-0 fw-semibold">Sony Alpha a7 III</p>
+              <small>Electronics • $1,998</small>
+            </div>
+            <span class="badge bg-success-subtle text-success">Completed</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
     </div>
     </div>
   </main>
