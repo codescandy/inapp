@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       grid: {
         show: true,
-        borderColor: "#dad7d2",
+        borderColor: "#e2e8f0",
 
       },
       legend: {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         categories: ['28 Jan', '29 Jan', '30 Jan', '31 Jan', '1 Feb', '2 Feb', '3 Feb', '4 Feb', '5 Feb'],
         axisBorder: {
           show: false,
-          color: "#dad7d2",
+          color: "#e2e8f0",
           height: 1,
           width: '100%',
           offsetX: 0,
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         axisTicks: {
           show: false,
           borderType: 'solid',
-          color: "#dad7d2",
+          color: "#e2e8f0",
           height: 6,
           offsetX: 0,
           offsetY: 0,

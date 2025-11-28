@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+
+<body>
+  <div id="overlay" class="overlay"></div>
+  <!-- TOPBAR -->
+  <nav id="topbar" class="navbar bg-white border-bottom fixed-top topbar px-3">
+    <button id="toggleBtn" class="d-none d-lg-inline-flex btn btn-light btn-icon btn-sm ">
+      <i class="ti ti-layout-sidebar-left-expand"></i>
+    </button>
+
+    <!-- MOBILE -->
+    <button id="mobileBtn" class="btn btn-light btn-icon btn-sm d-lg-none me-2">
+      <i class="ti ti-layout-sidebar-left-expand"></i>
+    </button>
+    <div>
+      <!-- Navbar nav -->
+      <ul class="list-unstyled d-flex align-items-center mb-0 gap-1">
+        <!-- Pages link -->
+
+        <!-- Bell icon -->
+        <li>
+          <a class="position-relative btn-icon btn-sm btn-light btn rounded-circle" data-bs-toggle="dropdown"
+            aria-expanded="false" href="#" role="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-bell">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 5a2 2 0 1 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
+              <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
+            </svg>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-2 ms-n2">
+              2
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-end dropdown-menu-md p-0">
+            <ul class="list-unstyled p-0 m-0">
+              <li class="px-4 py-3 border-bottom">
+                <div class="d-flex gap-2">
+                  <img src="./assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-md rounded-circle" />
+                  <div class="flex-grow-1">
+                    <p class="mb-1 small fw-semibold">New order received</p>
+                    <p class="mb-0 text-secondary small">Order #12345 has been placed</p>
+                    <small class="text-secondary">5 minutes ago</small>
+                  </div>
+                </div>
+              </li>
+              <li class="px-4 py-3 border-bottom">
+                <div class="d-flex gap-2">
+                  <img src="./assets/images/avatar/avatar-3.jpg" alt="" class="avatar avatar-md rounded-circle" />
+                  <div class="flex-grow-1">
+                    <p class="mb-1 small fw-semibold">Payment confirmed</p>
+                    <p class="mb-0 text-secondary small">Payment of $299 has been received</p>
+                    <small class="text-secondary">1 hour ago</small>
+                  </div>
+                </div>
+              </li>
+              <li class="px-4 py-3 text-center">
+                <a href="#" class="text-primary small">View all notifications</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- Dropdown -->
+        <li class="ms-3 dropdown">
+          <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-md rounded-circle" />
+          </a>
+          <div class="dropdown-menu dropdown-menu-end p-0" style="min-width: 200px;">
+            <div>
+              <div class="d-flex gap-3 align-items-center border-dashed border-bottom px-3 py-3">
+                <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-md rounded-circle" />
+                <div>
+                  <h4 class="mb-0 small">Shrina Tesla</h4>
+                  <p class="mb-0 text-secondary small">@imshrina</p>
+                </div>
+              </div>
+              <div class="p-3 d-flex flex-column gap-1">
+                <a href="#!" class="text-secondary">
+
+                  <span>Home</span>
+                </a>
+                <a href="#!" class="text-secondary">
+
+                  <span> Inbox</span>
+                </a>
+                <a href="#!" class="text-secondary">
+
+                  <span> Chat</span>
+                </a>
+                <a href="#!" class="text-secondary">
+
+                  <span> Activity</span>
+                </a>
+                <a href="#!" class="text-secondary">
+
+                  <span> Account Settings</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- SIDEBAR -->
+  <aside id="sidebar" class="sidebar">
+    <div class="logo-area">
+      <i class="ti ti-layout-2"></i>
+      <span class="logo-text">InApp</span>
+    </div>
+    <ul class="nav flex-column">
+      <li><a class="nav-link active" href="#"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
+      <li><a class="nav-link" href="#"><i class="ti ti-box-seam"></i><span class="nav-text">Products</span></a></li>
+      <li><a class="nav-link" href="#"><i class="ti ti-users"></i><span class="nav-text">Customers</span></a></li>
+      <li><a class="nav-link" href="#"><i class="ti ti-receipt"></i><span class="nav-text">Orders</span></a></li>
+      <li><a class="nav-link" href="#"><i class="ti ti-settings"></i><span class="nav-text">Settings</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main id="content" class="content px-6 px-lg-0 py-10">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="">
+            <h1 class="fs-3">Add Product</h1>
+            <p class="mb-0">Your main content goes here…</p>
+          </div>
+          <div>
+            <a href="create-product.html" class="btn btn-primary">Go to Products List</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body p-4">
+                    <form id="addProductForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="productName" class="form-label">Product Name</label>
+                                <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="productSKU" class="form-label">SKU</label>
+                                <input type="text" class="form-control" id="productSKU" placeholder="Enter SKU" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="productPrice" class="form-label">Price</label>
+                                <input type="number" class="form-control" id="productPrice" placeholder="0.00" step="0.01" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="productStock" class="form-label">Stock Quantity</label>
+                                <input type="number" class="form-control" id="productStock" placeholder="0" required>
+                            </div>
+                        </div>
+                      
+                        <div class="mb-3">
+                            <label for="productCategory" class="form-label">Category</label>
+                            <select class="form-select" id="productCategory" required>
+                                <option value="">Select category</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="food">Food</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productImage" class="form-label">Product Image</label>
+                            <input type="file" class="form-control" id="productImage" accept="image/*" required>
+                        </div>
+                          <div class="mb-3">
+                            <label for="productDescription" class="form-label">Description</label>
+                            <textarea class="form-control" id="productDescription" rows="4" placeholder="Enter product description"></textarea>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-primary">Add Product</button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+
+        </div>
+
+      </div>
+
+      
+    
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/main.js" type="module"></script>
+
+
+  <script>
+    const sidebar = document.getElementById('sidebar');
+    const content = document.getElementById('content');
+    const topbar = document.getElementById('topbar');
+    const toggleBtn = document.getElementById('toggleBtn');
+    const mobileBtn = document.getElementById('mobileBtn');
+    const overlay = document.getElementById('overlay');
+
+    // Desktop collapse
+    toggleBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('collapsed');
+      content.classList.toggle('full');
+      topbar.classList.toggle('full');
+    });
+
+    // Mobile sidebar open
+    mobileBtn.addEventListener('click', () => {
+      sidebar.classList.add('mobile-show');
+      overlay.classList.add('show');
+    });
+
+    // 🔥 Click outside to close
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('mobile-show');
+      overlay.classList.remove('show');
+    });
+  </script>
+</body>
+
+</html>
