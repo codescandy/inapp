@@ -123,11 +123,11 @@
       <span class="logo-text">InApp</span>
     </div>
     <ul class="nav flex-column">
-      <li><a class="nav-link active" href="#"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
-      <li><a class="nav-link" href="#"><i class="ti ti-box-seam"></i><span class="nav-text">Products</span></a></li>
-      <li><a class="nav-link" href="#"><i class="ti ti-users"></i><span class="nav-text">Customers</span></a></li>
-      <li><a class="nav-link" href="#"><i class="ti ti-receipt"></i><span class="nav-text">Orders</span></a></li>
-      <li><a class="nav-link" href="#"><i class="ti ti-settings"></i><span class="nav-text">Settings</span></a></li>
+      <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
+      <li><a class="nav-link" href="products.html"><i class="ti ti-box-seam"></i><span class="nav-text">Products</span></a></li>
+      <li><a class="nav-link" href="customers.html"><i class="ti ti-users"></i><span class="nav-text">Customers</span></a></li>
+      <li><a class="nav-link" href="orders.html"><i class="ti ti-receipt"></i><span class="nav-text">Orders</span></a></li>
+      <li><a class="nav-link" href="settings.html"><i class="ti ti-settings"></i><span class="nav-text">Settings</span></a></li>
     </ul>
   </aside>
 
@@ -637,6 +637,18 @@
     overlay.addEventListener('click', () => {
       sidebar.classList.remove('mobile-show');
       overlay.classList.remove('show');
+    });
+  </script>
+  <script>
+    // Set active nav link based on current page
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.sidebar .nav-link');
+    
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
     });
   </script>
 </body>

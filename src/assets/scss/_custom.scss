@@ -37,6 +37,10 @@
 			color: $primary;
       background-color: rgba($primary, 0.095);
 		}
+			&.active {
+			color: $primary;
+      background-color: rgba($primary, 0.095);
+		}
     .ti {
       font-size: 18px;
     }
