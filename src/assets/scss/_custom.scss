@@ -14,7 +14,7 @@
 	width: 240px;
 	background: $white;
 	transition: width .3s, left .3s;
-  border-right: 1px solid $gray-100;
+  border-right: 1px solid $gray-200;
 	height: 100vh;
 	position: fixed;
 	top: 0;
@@ -60,7 +60,7 @@
 		gap: 10px;
 		padding-left: 20px;
 		color: $gray-800;
-    border-bottom: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-200;
 	}
 }
 .sidebar.collapsed {

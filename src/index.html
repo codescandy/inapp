@@ -123,12 +123,17 @@
       <span class="logo-text">InApp</span>
     </div>
     <ul class="nav flex-column">
+      <li class="px-4 py-2"><small>Main</small></li>
       <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
-      <li><a class="nav-link" href="products.html"><i class="ti ti-box-seam"></i><span class="nav-text">Products</span></a></li>
-      <li><a class="nav-link" href="customers.html"><i class="ti ti-users"></i><span class="nav-text">Customers</span></a></li>
-      <li><a class="nav-link" href="orders.html"><i class="ti ti-receipt"></i><span class="nav-text">Orders</span></a></li>
-      <li><a class="nav-link" href="settings.html"><i class="ti ti-settings"></i><span class="nav-text">Settings</span></a></li>
+<li><a class="nav-link" href="inventory.html"><i class="ti ti-box-seam"></i><span class="nav-text">Inventory</span></a></li>
+   <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Add Product</span></a></li>
+      <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a></li>
+
+   <li class="px-4 pt-4 pb-2"><small>Account</small></li>
+      <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a></li>
+      <li><a class="nav-link" href="signout.html"><i class="ti ti-user-plus"></i><span class="nav-text">Sign up</span></a></li>
     </ul>
+
   </aside>
 
   <!-- MAIN CONTENT -->
@@ -398,7 +403,7 @@
               <small>•</small>
               <small>5,420 Units</small>
               </div>
-          
+
             </div>
             <span class="badge bg-primary-subtle text-primary border border-primary">32%</span>
           </li>
@@ -412,7 +417,7 @@
               <small>•</small>
               <small>862 Units</small>
               </div>
-              
+
             </div>
             <span class="badge bg-info-subtle text-info border border-info">22%</span>
           </li>
@@ -425,7 +430,7 @@
               <small>•</small>
               <small>3,200 Units</small>
               </div>
-             
+
             </div>
             <span class="badge bg-success-subtle text-success border border-success">28%</span>
           </li>
@@ -438,7 +443,7 @@
               <small>•</small>
               <small>2,890 Units</small>
               </div>
-            
+
             </div>
             <span class="badge bg-warning-subtle text-warning border border-warning">25%</span>
           </li>
@@ -451,7 +456,7 @@
       <div class="card  h-100">
         <div class="card-header bg-white d-flex justify-content-between align-items-center px-4 py-3">
           <div class="d-flex align-items-center">
-            
+
              <h4 class="mb-0 h5">Low Stock Products</h4>
           </div>
           <a href="#" class="small text-primary">View All</a>
@@ -541,7 +546,7 @@
               <small>•</small>
               <small>2,$2,499</small>
               </div>
-           
+
             </div>
             <span class="badge bg-success-subtle text-success">Completed</span>
           </li>
@@ -555,7 +560,7 @@
               <small>•</small>
               <small>$549</small>
               </div>
-              
+
             </div>
             <span class="badge bg-primary-subtle text-primary">Processing</span>
           </li>
@@ -595,7 +600,7 @@
               <small>•</small>
               <small>$299</small>
               </div>
-              
+
             </div>
             <span class="badge bg-danger-subtle text-danger">Cancelled</span>
           </li>
@@ -643,7 +648,7 @@
     // Set active nav link based on current page
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.sidebar .nav-link');
-    
+
     navLinks.forEach(link => {
       link.classList.remove('active');
       if (link.getAttribute('href') === currentPage) {

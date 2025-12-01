@@ -122,7 +122,7 @@
       <i class="ti ti-layout-2"></i>
       <span class="logo-text">InApp</span>
     </div>
-    <ul class="nav flex-column">
+   <ul class="nav flex-column">
       <li class="px-4 py-2"><small>Main</small></li>
       <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
 <li><a class="nav-link" href="inventory.html"><i class="ti ti-box-seam"></i><span class="nav-text">Inventory</span></a></li>
@@ -143,73 +143,156 @@
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center mb-4">
           <div class="">
-            <h1 class="fs-3">Add Product</h1>
-            <p class="mb-0">Your main content goes here…</p>
+            <h1 class="fs-3">Reports</h1>
+            <p class="mb-0">View your inventory analytics and reports</p>
           </div>
-          <div>
-            <a href="create-product.html" class="btn btn-primary">Go to Products List</a>
-          </div>
+
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body p-4">
-                    <form id="addProductForm">
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="productName" class="form-label">Product Name</label>
-                                <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="productSKU" class="form-label">SKU</label>
-                                <input type="text" class="form-control" id="productSKU" placeholder="Enter SKU" required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-3">
-                                <label for="productPrice" class="form-label">Price</label>
-                                <input type="number" class="form-control" id="productPrice" placeholder="0.00" step="0.01" required>
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="productStock" class="form-label">Stock Quantity</label>
-                                <input type="number" class="form-control" id="productStock" placeholder="0" required>
-                            </div>
-                        </div>
 
-                        <div class="mb-3">
-                            <label for="productCategory" class="form-label">Category</label>
-                            <select class="form-select" id="productCategory" required>
-                                <option value="">Select category</option>
-                                <option value="electronics">Electronics</option>
-                                <option value="clothing">Clothing</option>
-                                <option value="food">Food</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="productImage" class="form-label">Product Image</label>
-                            <input type="file" class="form-control" id="productImage" accept="image/*" required>
-                        </div>
-                          <div class="mb-3">
-                            <label for="productDescription" class="form-label">Description</label>
-                            <textarea class="form-control" id="productDescription" rows="4" placeholder="Enter product description"></textarea>
-                        </div>
-                        <div class="d-flex gap-2">
-                            <button type="submit" class="btn btn-primary">Add Product</button>
-                            <button type="reset" class="btn btn-secondary">Clear</button>
-                        </div>
-
-                    </form>
-                </div>
+      <div class="row g-3">
+        <!-- Stat cards -->
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h6 class="mb-4 ">Total Revenue</h6>
+              <h3 class="mb-1 fw-bold">$45,231</h3>
+              <p class="mb-0 text-success small"><i class="ti ti-arrow-up"> </i>12% from last month</p>
             </div>
-
-
+          </div>
         </div>
 
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h6 class="mb-4 ">Products Sold</h6>
+              <h3 class="mb-1 fw-bold">1,234</h3>
+              <p class="mb-0 text-success small"><i class="ti ti-arrow-up"> </i> 8% from last month</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h6 class="mb-4 ">Low Stock Items</h6>
+              <h3 class="mb-1 fw-bold">23</h3>
+              <p class="mb-0 text-danger small"><i class="ti ti-arrow-down"> </i> 3% from last month</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-3">
+          <div class="card h-100">
+            <div class="card-body p-4">
+              <h6 class="mb-4 ">Out of Stock</h6>
+              <h3 class="mb-1 fw-bold">5</h3>
+              <p class="mb-0 text-danger small"><i class="ti ti-arrow-down"> </i> 2% from last month</p>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <div class="row mt-4">
+        <!-- Sales Overview (full width) -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h2 class="mb-0 fs-5">Sales Overview</h2>
 
+                </div>
+                 <div class="controls">
+        <button id="btn-random" class="btn btn-light btn-sm">Randomize Data</button>
+        <button id="btn-update" class="btn btn-primary btn-sm">Show This Year Only</button>
+      </div>
+              </div>
+
+              <!-- Chart placeholder: replace with canvas or chart container when integrating chart library -->
+
+                <div id="salesChart"></div>
+
+
+              <div class="d-flex justify-content-end">
+                <a href="#" class="small">View detailed report</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- Top Products -->
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                  <h2 class="mb-0 fs-5">Top Products</h2>
+
+                </div>
+              </div>
+
+              <!-- Product rows -->
+              <div class="list-group list-group-flush">
+                <div class="list-group-item p-3 d-flex align-items-center">
+                  <div class="me-3">
+                    <img src="./assets/images/product-1.png" alt="Product A" class="rounded" style="width:48px; height:48px; object-fit:cover;">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-0">Gaming Joy Stick</h6>
+                        <small class="text-secondary">156 units sold</small>
+                      </div>
+                      <div class="text-end">
+                        <strong>$3,120</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list-group-item p-3 d-flex align-items-center">
+                  <div class="me-3">
+                    <img src="./assets/images/product-2.png" alt="Product B" class="rounded" style="width:48px; height:48px; object-fit:cover;">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-0">Wireless Headphones</h6>
+                        <small class="text-secondary">134 units sold</small>
+                      </div>
+                      <div class="text-end">
+                        <strong>$2,680</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="list-group-item p-3 d-flex align-items-center">
+                  <div class="me-3">
+                    <img src="./assets/images/product-3.png" alt="Product C" class="rounded" style="width:48px; height:48px; object-fit:cover;">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h6 class="mb-0">Smartwatch</h6>
+                        <small class="text-secondary">98 units sold</small>
+                      </div>
+                      <div class="text-end">
+                        <strong>$1,960</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
   </main>
