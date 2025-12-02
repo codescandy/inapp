@@ -1,16 +1,33 @@
 // Example: override Bootstrap color variables
 
-$gray-50: #f8fafc !default;
-$gray-100: #f1f5f9 !default;
-$gray-200: #e2e8f0 !default;
-$gray-300: #cbd5e1 !default;
-$gray-400: #94a3b8 !default;
-$gray-500: #64748b !default;
-$gray-600: #475569 !default;
-$gray-700: #334155 !default;
-$gray-800: #1e293b !default;
-$gray-900: #0f172a !default;
-$gray-950: #020617 !default;
+$gray-50: #fafafa !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #e5e5e5 !default;
+$gray-300: #d4d4d4 !default;
+$gray-400: #a3a3a3 !default;
+$gray-500: #737373 !default;
+$gray-600: #525252 !default;
+$gray-700: #404040 !default;
+$gray-800: #262626 !default;
+$gray-900: #171717 !default;
+$gray-950: #0a0a0a !default;
+
+$orange:       #E66239 !default;
+$red:          #FB2C36 !default;
+$green:        #00C951 !default; 
+$cyan:         #00B8DB !default;
+$yellow:       #F0B100 !default;
+
+
+$primary:       $orange !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+
+$min-contrast-ratio:   2.5 !default;
+
 
 $light: $gray-100 !default;
 $border-color: $gray-200 !default;
