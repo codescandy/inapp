@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Dashboard Layout</title>
+  <title>Reports - InApp Inventory Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -131,7 +131,7 @@
 
    <li class="px-4 pt-4 pb-2"><small>Account</small></li>
       <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a></li>
-      <li><a class="nav-link" href="signout.html"><i class="ti ti-user-plus"></i><span class="nav-text">Sign up</span></a></li>
+      <li><a class="nav-link" href="signup.html"><i class="ti ti-user-plus"></i><span class="nav-text">Sign up</span></a></li>
     </ul>
 
   </aside>
@@ -293,7 +293,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </main>
 
@@ -301,45 +300,7 @@
   <script src="./assets/js/main.js" type="module"></script>
 
 
-  <script>
-    const sidebar = document.getElementById('sidebar');
-    const content = document.getElementById('content');
-    const topbar = document.getElementById('topbar');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const mobileBtn = document.getElementById('mobileBtn');
-    const overlay = document.getElementById('overlay');
 
-    // Desktop collapse
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      content.classList.toggle('full');
-      topbar.classList.toggle('full');
-    });
-
-    // Mobile sidebar open
-    mobileBtn.addEventListener('click', () => {
-      sidebar.classList.add('mobile-show');
-      overlay.classList.add('show');
-    });
-
-    // 🔥 Click outside to close
-    overlay.addEventListener('click', () => {
-      sidebar.classList.remove('mobile-show');
-      overlay.classList.remove('show');
-    });
-  </script>
-  <script>
-    // Set active nav link based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.sidebar .nav-link');
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  </script>
 </body>
 
 </html>

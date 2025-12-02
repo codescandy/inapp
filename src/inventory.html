@@ -3,11 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Dashboard Layout</title>
+  <title>Inventory - InApp Inventory Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-
 </head>
 
 <body>
@@ -122,16 +119,22 @@
       <i class="ti ti-layout-2"></i>
       <span class="logo-text">InApp</span>
     </div>
-     <ul class="nav flex-column">
+    <ul class="nav flex-column">
       <li class="px-4 py-2"><small>Main</small></li>
-      <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span class="nav-text">Dashboard</span></a></li>
-<li><a class="nav-link" href="inventory.html"><i class="ti ti-box-seam"></i><span class="nav-text">Inventory</span></a></li>
-   <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Add Product</span></a></li>
-      <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a></li>
+      <li><a class="nav-link active" href="index.html"><i class="ti ti-home"></i><span
+            class="nav-text">Dashboard</span></a></li>
+      <li><a class="nav-link" href="inventory.html"><i class="ti ti-box-seam"></i><span
+            class="nav-text">Inventory</span></a></li>
+      <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Add
+            Product</span></a></li>
+      <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a>
+      </li>
 
-   <li class="px-4 pt-4 pb-2"><small>Account</small></li>
-      <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a></li>
-      <li><a class="nav-link" href="signout.html"><i class="ti ti-user-plus"></i><span class="nav-text">Sign up</span></a></li>
+      <li class="px-4 pt-4 pb-2"><small>Account</small></li>
+      <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a>
+      </li>
+      <li><a class="nav-link" href="signup.html"><i class="ti ti-user-plus"></i><span class="nav-text">Sign
+            up</span></a></li>
     </ul>
 
   </aside>
@@ -141,189 +144,197 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-          <div class="">
-            <h1 class="fs-3">Product List</h1>
-            <p class="mb-0">Your main content goes here…</p>
-          </div>
-          <div>
-            <a href="create-product.html" class="btn btn-primary">Add Product</a>
-          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="">
+              <h1 class="fs-3">Product List</h1>
+              <p class="mb-0">Your main content goes here…</p>
+            </div>
+            <div>
+              <a href="create-product.html" class="btn btn-primary">Add Product</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-12">
-            <div>
-                <div class="d-flex gap-2 mb-4 flex-wrap justify-content-between">
-                    <input type="text" class="form-control" placeholder="Search products..." style="max-width: 250px;">
-                    <div class="d-flex gap-2">
+          <div>
+            <div class="d-flex gap-2 mb-4 flex-wrap justify-content-between">
+              <input type="text" class="form-control" placeholder="Search products..." style="max-width: 250px;">
+              <div class="d-flex gap-2">
 
-                    <button class="btn btn-outline-secondary">
-                        <i class="ti ti-filter"></i> Filter
-                    </button>
-                    <button class="btn btn-outline-secondary">
-                        <i class="ti ti-file-excel"></i> Excel
-                    </button>
-                    <button class="btn btn-outline-secondary">
-                        <i class="ti ti-file-pdf"></i> PDF
-                    </button>
-                    </div>
-                </div>
+                <button class="btn btn-outline-secondary">
+                  <i class="ti ti-filter"></i> Filter
+                </button>
+                <button class="btn btn-outline-secondary">
+                  <i class="ti ti-file-excel"></i> Excel
+                </button>
+                <button class="btn btn-outline-secondary">
+                  <i class="ti ti-file-pdf"></i> PDF
+                </button>
+              </div>
             </div>
-            <div class="card table-responsive">
-                <table class="table mb-0">
-                    <thead class="">
-                        <tr>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Code</th>
-                            <th>Category</th>
-                            <th>Brand</th>
-                            <th>Price</th>
-                            <th>Unit</th>
-                            <th>Quantity</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">Gaming Joy Stick</a></td>
-                            <td>PRD001</td>
-                            <td>Electronics</td>
-                            <td>Brand Name</td>
-                            <td>$99.99</td>
-                            <td>pcs</td>
-                            <td>150</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                        <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">Wireless Earphones</a></td>
-                            <td>PRD002</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$89.99</td>
-                            <td>pcs</td>
-                            <td>320</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                          <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">Smart Watch Pro</a></td>
-                            <td>PRD003</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$98.00</td>
-                            <td>pcs</td>
-                            <td>200</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                         <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">USB-C Fast Charger</a></td>
-                            <td>PRD004</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$86.00</td>
-                            <td>pcs</td>
-                            <td>80</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                        <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">Portable Bluetooth Speaker</a></td>
-                            <td>PRD005</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$32.00</td>
-                            <td>pcs</td>
-                            <td>110</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                        <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">Magic Keyboard</a></td>
-                            <td>PRD006</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$49.00</td>
-                            <td>pcs</td>
-                            <td>10</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                        <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">MacBook Pro 16"</a></td>
-                            <td>PRD007</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$99.00</td>
-                            <td>pcs</td>
-                            <td>10</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                         <tr class="align-middle">
-                            <td><a href=""><img src="./assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /></a></td>
-                            <td><a href="">AirPods Pro Max</a></td>
-                            <td>PRD008</td>
-                            <td>Electronics</td>
-                            <td>Tech Pro</td>
-                            <td>$109.00</td>
-                            <td>pcs</td>
-                            <td>200</td>
-                            <td class="">
-                                <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
-                                <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
-                            </td>
-                        </tr>
-                    </tbody>
-                    <tfoot class="">
+          </div>
+          <div class="card table-responsive">
+            <table class="table mb-0">
+              <thead class="">
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Code</th>
+                  <th>Category</th>
+                  <th>Brand</th>
+                  <th>Price</th>
+                  <th>Unit</th>
+                  <th>Quantity</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-1.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">Gaming Joy Stick</a></td>
+                  <td>PRD001</td>
+                  <td>Electronics</td>
+                  <td>Brand Name</td>
+                  <td>$99.99</td>
+                  <td>pcs</td>
+                  <td>150</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-2.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">Wireless Earphones</a></td>
+                  <td>PRD002</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$89.99</td>
+                  <td>pcs</td>
+                  <td>320</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-3.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">Smart Watch Pro</a></td>
+                  <td>PRD003</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$98.00</td>
+                  <td>pcs</td>
+                  <td>200</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-4.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">USB-C Fast Charger</a></td>
+                  <td>PRD004</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$86.00</td>
+                  <td>pcs</td>
+                  <td>80</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-5.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">Portable Bluetooth Speaker</a></td>
+                  <td>PRD005</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$32.00</td>
+                  <td>pcs</td>
+                  <td>110</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-6.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">Magic Keyboard</a></td>
+                  <td>PRD006</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$49.00</td>
+                  <td>pcs</td>
+                  <td>10</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-7.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">MacBook Pro 16"</a></td>
+                  <td>PRD007</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$99.00</td>
+                  <td>pcs</td>
+                  <td>10</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+                <tr class="align-middle">
+                  <td><a href=""><img src="./assets/images/product-8.png" alt="" class="avatar avatar-md rounded" /></a>
+                  </td>
+                  <td><a href="">AirPods Pro Max</a></td>
+                  <td>PRD008</td>
+                  <td>Electronics</td>
+                  <td>Tech Pro</td>
+                  <td>$109.00</td>
+                  <td>pcs</td>
+                  <td>200</td>
+                  <td class="">
+                    <a href="#" class="link-dark"><i class="ti ti-edit "></i></a>
+                    <a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot class="">
 
-                        <tr>
-                            <td class="border-bottom-0">Showing product per page</td>
-                            <td colspan="9" class="border-bottom-0">
-                                <nav aria-label="Page navigation" class="d-flex justify-content-end">
-                                    <ul class="pagination mb-0">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </td>
-                        </tr>
+                <tr>
+                  <td class="border-bottom-0">Showing product per page</td>
+                  <td colspan="9" class="border-bottom-0">
+                    <nav aria-label="Page navigation" class="d-flex justify-content-end">
+                      <ul class="pagination mb-0">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">Next</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </td>
+                </tr>
 
-                    </tfoot>
-                </table>
-            </div>
+              </tfoot>
+            </table>
+          </div>
 
 
         </div>
@@ -337,234 +348,6 @@
 
 
 
-  <!-- Add Product Modal -->
-  <div id="addProductModal" class="custom-modal" aria-hidden="true" style="display:none;position:fixed;inset:0;z-index:2000;align-items:center;justify-content:center;">
-    <div class="modal-backdrop" id="addModalBackdrop" style="position:fixed;inset:0;background:rgba(0,0,0,.5)"></div>
-    <div class="modal-panel card" role="dialog" aria-modal="true" style="width:720px;max-width:95%;z-index:2001;">
-      <div class="card-header d-flex justify-content-between align-items-center">
-        <h5 class="mb-0">Add Product</h5>
-        <button type="button" id="closeAddModal" class="btn btn-light btn-sm">&times;</button>
-      </div>
-      <div class="card-body">
-        <form id="addProductForm" class="row g-3">
-          <div class="col-12 col-md-4 text-center">
-            <img id="imgPreview" src="./assets/images/product-1.png" alt="preview" class="avatar avatar-lg rounded mb-2" style="width:140px;height:140px;object-fit:contain;border:1px solid #e9ecef;padding:6px;background:#fff;">
-            <div>
-              <input type="url" id="imageUrl" class="form-control form-control-sm" placeholder="Image URL (optional)">
-              <small class="text-secondary">or leave to use default</small>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-8">
-            <div class="row g-2">
-              <div class="col-12 col-md-6">
-                <label class="form-label small">Name</label>
-                <input id="prodName" class="form-control" required>
-              </div>
-              <div class="col-12 col-md-6">
-                <label class="form-label small">Code</label>
-                <input id="prodCode" class="form-control" required>
-              </div>
-
-              <div class="col-12 col-md-6">
-                <label class="form-label small">Category</label>
-                <input id="prodCategory" class="form-control">
-              </div>
-              <div class="col-12 col-md-6">
-                <label class="form-label small">Brand</label>
-                <input id="prodBrand" class="form-control">
-              </div>
-
-              <div class="col-6 col-md-4">
-                <label class="form-label small">Price</label>
-                <input id="prodPrice" type="number" step="0.01" min="0" class="form-control">
-              </div>
-              <div class="col-6 col-md-4">
-                <label class="form-label small">Unit</label>
-                <input id="prodUnit" class="form-control" placeholder="pcs">
-              </div>
-              <div class="col-12 col-md-4">
-                <label class="form-label small">Quantity</label>
-                <input id="prodQty" type="number" min="0" class="form-control">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 d-flex justify-content-end gap-2 mt-2">
-            <button type="button" class="btn btn-secondary" id="cancelAdd">Cancel</button>
-            <button type="submit" class="btn btn-primary" id="saveAdd">Save Product</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    /* small helper to show modal with flex centering */
-    .custom-modal[aria-hidden="false"] { display:flex !important; }
-  </style>
-
-  <script>
-    (function () {
-      // Elements
-      const modal = document.getElementById('addProductModal');
-      const backdrop = document.getElementById('addModalBackdrop');
-      const openLinks = Array.from(document.querySelectorAll('a[href="create-product.html"]'));
-      const closeBtn = document.getElementById('closeAddModal');
-      const cancelBtn = document.getElementById('cancelAdd');
-      const form = document.getElementById('addProductForm');
-      const imgPreview = document.getElementById('imgPreview');
-      const imageUrlInput = document.getElementById('imageUrl');
-
-      // Inputs
-      const nameInput = document.getElementById('prodName');
-      const codeInput = document.getElementById('prodCode');
-      const catInput = document.getElementById('prodCategory');
-      const brandInput = document.getElementById('prodBrand');
-      const priceInput = document.getElementById('prodPrice');
-      const unitInput = document.getElementById('prodUnit');
-      const qtyInput = document.getElementById('prodQty');
-
-      const tableBody = document.querySelector('table.table tbody');
-
-      function openModal() {
-        modal.setAttribute('aria-hidden', 'false');
-        modal.style.display = 'flex';
-        // focus first input
-        setTimeout(() => nameInput.focus(), 150);
-      }
-      function closeModal() {
-        modal.setAttribute('aria-hidden', 'true');
-        modal.style.display = 'none';
-        form.reset();
-        imgPreview.src = './assets/images/product-1.png';
-      }
-
-      // Intercept clicks to open modal instead of navigating away
-      openLinks.forEach(a => {
-        a.addEventListener('click', function (e) {
-          e.preventDefault();
-          openModal();
-        });
-      });
-
-      // Close handlers
-      closeBtn.addEventListener('click', closeModal);
-      cancelBtn.addEventListener('click', closeModal);
-      backdrop.addEventListener('click', closeModal);
-
-      // Live preview for image url
-      imageUrlInput.addEventListener('input', () => {
-        const url = imageUrlInput.value.trim();
-        imgPreview.src = url || './assets/images/product-1.png';
-      });
-
-      // Add product to table
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const name = nameInput.value.trim();
-        const code = codeInput.value.trim();
-        if (!name || !code) {
-          alert('Please provide at least Name and Code.');
-          return;
-        }
-
-        const category = catInput.value.trim() || '—';
-        const brand = brandInput.value.trim() || '—';
-        const price = parseFloat(priceInput.value) || 0;
-        const unit = unitInput.value.trim() || 'pcs';
-        const qty = parseInt(qtyInput.value, 10) || 0;
-        const imgSrc = imageUrlInput.value.trim() || './assets/images/product-1.png';
-
-        // Build row
-        const tr = document.createElement('tr');
-        tr.className = 'align-middle';
-
-        // Image cell
-        const tdImg = document.createElement('td');
-        const aImg = document.createElement('a');
-        aImg.href = '';
-        const img = document.createElement('img');
-        img.src = imgSrc;
-        img.alt = name;
-        img.className = 'avatar avatar-md rounded';
-        img.style.width = '48px';
-        img.style.height = '48px';
-        img.style.objectFit = 'contain';
-        aImg.appendChild(img);
-        tdImg.appendChild(aImg);
-        tr.appendChild(tdImg);
-
-        // Name cell (link)
-        const tdName = document.createElement('td');
-        const aName = document.createElement('a');
-        aName.href = '';
-        aName.textContent = name;
-        tdName.appendChild(aName);
-        tr.appendChild(tdName);
-
-        // Code
-        const tdCode = document.createElement('td');
-        tdCode.textContent = code;
-        tr.appendChild(tdCode);
-
-        // Category
-        const tdCat = document.createElement('td');
-        tdCat.textContent = category;
-        tr.appendChild(tdCat);
-
-        // Brand
-        const tdBrand = document.createElement('td');
-        tdBrand.textContent = brand;
-        tr.appendChild(tdBrand);
-
-        // Price
-        const tdPrice = document.createElement('td');
-        tdPrice.textContent = '$' + price.toFixed(2);
-        tr.appendChild(tdPrice);
-
-        // Unit
-        const tdUnit = document.createElement('td');
-        tdUnit.textContent = unit;
-        tr.appendChild(tdUnit);
-
-        // Quantity
-        const tdQty = document.createElement('td');
-        tdQty.textContent = String(qty);
-        tr.appendChild(tdQty);
-
-        // Action
-        const tdAction = document.createElement('td');
-        tdAction.className = '';
-        tdAction.innerHTML = '<a href="#" class="link-dark"><i class="ti ti-edit"></i></a>' +
-                             '<a href="#" class="link-danger"><i class="ti ti-trash ms-2"></i></a>';
-        tr.appendChild(tdAction);
-
-        tableBody.insertBefore(tr, tableBody.firstChild); // add at top
-
-        // Close and reset
-        closeModal();
-      });
-
-      // Delegate delete (trash) clicks
-      tableBody.addEventListener('click', (e) => {
-        const trash = e.target.closest('.ti-trash');
-        if (trash) {
-          e.preventDefault();
-          const row = trash.closest('tr');
-          if (!row) return;
-          if (confirm('Remove this product?')) row.remove();
-        }
-      });
-
-      // optional: keyboard ESC to close modal
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
-      });
-    })();
-  </script>
-
 
 
 
@@ -576,45 +359,7 @@
   <script src="./assets/js/main.js" type="module"></script>
 
 
-  <script>
-    const sidebar = document.getElementById('sidebar');
-    const content = document.getElementById('content');
-    const topbar = document.getElementById('topbar');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const mobileBtn = document.getElementById('mobileBtn');
-    const overlay = document.getElementById('overlay');
 
-    // Desktop collapse
-    toggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('collapsed');
-      content.classList.toggle('full');
-      topbar.classList.toggle('full');
-    });
-
-    // Mobile sidebar open
-    mobileBtn.addEventListener('click', () => {
-      sidebar.classList.add('mobile-show');
-      overlay.classList.add('show');
-    });
-
-    // 🔥 Click outside to close
-    overlay.addEventListener('click', () => {
-      sidebar.classList.remove('mobile-show');
-      overlay.classList.remove('show');
-    });
-  </script>
-  <script>
-    // Set active nav link based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-    const navLinks = document.querySelectorAll('.sidebar .nav-link');
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-      }
-    });
-  </script>
 </body>
 
 </html>
