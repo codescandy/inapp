@@ -30,7 +30,7 @@
     font-weight: 400;
 		gap: 12px;
 		white-space: nowrap;
-    // margin: 0 12px;
+    margin: 0 12px;
     border-radius: 8px;
 
 		&:hover {
@@ -65,6 +65,10 @@
 }
 .sidebar.collapsed {
 	width: 60px;
+	.nav-link{
+		margin: 0 0px;
+		background-color: transparent;
+	}
 	.nav-text {
 		display: none;
 	}
