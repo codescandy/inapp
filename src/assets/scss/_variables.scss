@@ -27,6 +27,9 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 
 $min-contrast-ratio:   2.5 !default;
+$link-hover-decoration:                   none !default;
+$link-color:                              $gray-700 !default;
+$link-hover-color:                        $primary !default;
 
 
 $light: $gray-100 !default;
