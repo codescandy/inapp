@@ -23,14 +23,14 @@
 	z-index: 1030;
 	.nav-link {
 		color: $gray-800;
-		padding: 10px 18px;
+		padding: 8px 10px;
 		display: flex;
 		align-items: center;
     font-size: 14px;
     font-weight: 400;
 		gap: 12px;
 		white-space: nowrap;
-    margin: 0 12px;
+    margin: 1px 12px;
     border-radius: 8px;
 
 		&:hover {
@@ -68,6 +68,7 @@
 	.nav-link{
 		margin: 0 0px;
 		background-color: transparent;
+		padding: 8px 18px;
 	}
 	.nav-text {
 		display: none;
@@ -87,7 +88,7 @@
 .content {
 	margin-left: 240px;
 	// transition: margin-left .3s;
-	padding: 20px;
+	// padding: 20px;
 }
 .content.full {
 	margin-left: 60px;

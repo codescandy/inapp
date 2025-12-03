@@ -6,9 +6,9 @@
   <title>InApp Inventory Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
-<link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon_io/site.webmanifest">
 
 </head>
 
@@ -47,28 +47,38 @@
           </a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-md p-0">
             <ul class="list-unstyled p-0 m-0">
-              <li class="px-4 py-3 border-bottom">
-                <div class="d-flex gap-2">
-                  <img src="./assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-sm rounded-circle" />
-                  <div class="flex-grow-1">
-                    <p class="mb-1 small fw-semibold">New order received</p>
-                    <p class="mb-0 text-secondary small">Order #12345 has been placed</p>
-                    <small class="text-secondary">5 minutes ago</small>
+              <li class="p-3 border-bottom ">
+                <div class="d-flex gap-3">
+                  <img src="./assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <div class="flex-grow-1 small">
+                    <p class="mb-0">New order received</p>
+                    <p class="mb-1">Order #12345 has been placed</p>
+                    <div class="text-secondary">5 minutes ago</div>
                   </div>
                 </div>
               </li>
-              <li class="px-4 py-3 border-bottom">
-                <div class="d-flex gap-2">
-                  <img src="./assets/images/avatar/avatar-3.jpg" alt="" class="avatar avatar-sm rounded-circle" />
-                  <div class="flex-grow-1">
-                    <p class="mb-1 small fw-semibold">Payment confirmed</p>
-                    <p class="mb-0 text-secondary small">Payment of $299 has been received</p>
-                    <small class="text-secondary">1 hour ago</small>
+              <li class="p-3 border-bottom ">
+                <div class="d-flex gap-3">
+                  <img src="./assets/images/avatar/avatar-4.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <div class="flex-grow-1 small">
+                    <p class="mb-0">New user registered</p>
+                    <p class="mb-1">User @john_doe has signed up</p>
+                    <div class="text-secondary">30 minutes ago</div>
+                  </div>
+              </li>
+
+              <li class="p-3 border-bottom">
+                <div class="d-flex gap-3">
+                  <img src="./assets/images/avatar/avatar-2.jpg" alt="" class="avatar avatar-sm rounded-circle" />
+                  <div class="flex-grow-1 small">
+                    <p class="mb-0">Payment confirmed</p>
+                    <p class="mb-1">Payment of $299 has been received</p>
+                    <div class="text-secondary">1 hour ago</div>
                   </div>
                 </div>
               </li>
               <li class="px-4 py-3 text-center">
-                <a href="#" class="text-primary small">View all notifications</a>
+                <a href="#" class="text-primary ">View all notifications</a>
               </li>
             </ul>
           </div>
@@ -121,8 +131,9 @@
   <!-- SIDEBAR -->
   <aside id="sidebar" class="sidebar">
     <div class="logo-area">
-     <img src="./assets/images/logo-icon.svg" alt="" width="24">
-      <span class="logo-text">   <a href="" ><img src="./assets/images/logo.svg" alt=""></a></span>
+      <a href="index.html"><img src="./assets/images/logo-icon.svg" alt="" width="24">
+      <span class="logo-text ms-2"> <img src="./assets/images/logo.svg" alt=""></span>
+      </a>
     </div>
     <ul class="nav flex-column">
       <li class="px-4 py-2"><small class="nav-text">Main</small></li>
@@ -132,8 +143,12 @@
             class="nav-text">Inventory</span></a></li>
       <li><a class="nav-link" href="create-product.html"><i class="ti ti-plus"></i><span class="nav-text">Add
             Product</span></a></li>
-      <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a>
+    <li><a class="nav-link" href="reports.html"><i class="ti ti-receipt"></i><span class="nav-text">Reports</span></a>
       </li>
+    <li><a class="nav-link" href="404-error.html"><i class="ti ti-alert-circle"></i><span class="nav-text">404 Error</span></a>
+      </li>
+      <li><a class="nav-link" href="docs.html"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li>
+      
 
       <li class="px-4 pt-4 pb-2"><small class="nav-text">Account</small></li>
       <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a>
@@ -145,9 +160,9 @@
   </aside>
 
   <!-- MAIN CONTENT -->
-  <main id="content" class="content px-6 px-lg-0 py-10">
+  <main id="content" class="content py-10">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row ">
         <div class="col-12">
           <div class="mb-6">
             <h1 class="fs-3 mb-1">Dashboard</h1>
@@ -155,10 +170,10 @@
           </div>
         </div>
       </div>
-      <div class="row g-3">
+      <div class="row g-3 mb-3">
         <div class="col-lg-3 col-12">
 
-          <div class="card p-4 mb-4 bg-primary bg-opacity-10 border border-primary border-opacity-25 rounded-2">
+          <div class="card p-4  bg-primary bg-opacity-10 border border-primary border-opacity-25 rounded-2">
 
             <div class="d-flex gap-3 ">
               <div class="icon-shape icon-md bg-primary text-white rounded-2">
@@ -176,7 +191,7 @@
         </div>
         <div class="col-lg-3 col-12">
 
-          <div class="card p-4 mb-4 bg-success bg-opacity-10 border border-success border-opacity-25 rounded-2">
+          <div class="card p-4  bg-success bg-opacity-10 border border-success border-opacity-25 rounded-2">
 
             <div class="d-flex gap-3 ">
               <div class="icon-shape icon-md bg-success text-white rounded-2">
@@ -194,7 +209,7 @@
         </div>
         <div class="col-lg-3 col-12">
 
-          <div class="card p-4 mb-4 bg-info bg-opacity-10 border border-info border-opacity-25 rounded-2">
+          <div class="card p-4  bg-info bg-opacity-10 border border-info border-opacity-25 rounded-2">
 
             <div class="d-flex gap-3 ">
               <div class="icon-shape icon-md bg-info text-white rounded-2">
@@ -212,7 +227,7 @@
         </div>
         <div class="col-lg-3 col-12">
 
-          <div class="card p-4 mb-4 bg-warning bg-opacity-10 border border-warning border-opacity-25 rounded-2">
+          <div class="card p-4  bg-warning bg-opacity-10 border border-warning border-opacity-25 rounded-2">
 
             <div class="d-flex gap-3 ">
               <div class="icon-shape icon-md bg-warning text-white rounded-2">
@@ -230,7 +245,7 @@
         </div>
 
       </div>
-      <div class="row g-3 mb-4">
+      <div class="row g-3 mb-3">
         <div class="col-lg-4 col-12">
           <div class="card">
             <div class="card-body p-4">
@@ -245,7 +260,7 @@
               </div>
               <div class="d-flex justify-content-between align-items-center small">
                 <div class="text-muted"><span class="text-success">+35%</span> vs Last Month</div>
-                <div><a href="#" class="link-primary">View</a></div>
+                <div><a href="#" class="link-primary text-decoration-underline">View</a></div>
               </div>
             </div>
           </div>
@@ -265,7 +280,7 @@
               </div>
               <div class="d-flex justify-content-between align-items-center small">
                 <div class="text-muted"><span class="text-danger">-20%</span> vs Last Month</div>
-                <div><a href="#" class="link-primary">View</a></div>
+                 <div><a href="#" class="link-primary text-decoration-underline">View</a></div>
               </div>
             </div>
           </div>
@@ -285,7 +300,7 @@
               </div>
               <div class="d-flex justify-content-between align-items-center small">
                 <div class="text-muted"><span class="text-warning">-20%</span> vs Last Month</div>
-                <div><a href="#" class="link-primary">View</a></div>
+                <div><a href="#" class="link-primary text-decoration-underline">View</a></div>
               </div>
             </div>
           </div>
@@ -293,7 +308,7 @@
         </div>
 
       </div>
-      <div class="row g-3 mb-4">
+      <div class="row g-3 mb-3">
         <div class="col-12 col-lg-6">
           <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center bg-transparent px-4 py-3">
@@ -336,14 +351,14 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="row">
-                    <div class="col-sm-6 border-end">
-                      <div class="text-center px-4 ">
+                    <div class="col-6 border-end">
+                      <div class="text-center ">
                         <h2 class="mb-1">5.5K</h2>
                         <p class="text-success mb-2">First Time</p>
                         <span class="badge bg-success"><i class="ti ti-arrow-up-left me-1"></i>25%</span>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-6">
                       <div class="text-center">
                         <h2 class="mb-1">3.5K</h2>
                         <p class="text-warning mb-2">Return</p>
@@ -359,15 +374,15 @@
               <div class="row text-center border-top mt-4 pt-4">
                 <div class="col-4 border-end">
                   <h3 class="fw-bold mb-2">6987</h3>
-                  <span class="text-secondary">Suppliers</span>
+                  <small class="text-secondary">Suppliers</small>
                 </div>
                 <div class="col-4 border-end">
                   <h3 class="fw-bold mb-2">4896</h3>
-                  <span class="text-secondary">Customers</span>
+                  <small class="text-secondary">Customers</small>
                 </div>
                 <div class="col-4">
                   <h3 class="fw-bold mb-2">487</h3>
-                  <span class="text-secondary">Orders</span>
+                  <small class="text-secondary">Orders</small>
                 </div>
               </div>
             </div>
@@ -392,7 +407,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-2.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">Wireless Earphones</p>
+                  <p class="mb-1">Wireless Earphones</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">$89 </small>
                     <small>•</small>
@@ -406,7 +421,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-1.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">Gaming Joy Stick</p>
+                  <p class="mb-1">Gaming Joy Stick</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">$49 </small>
                     <small>•</small>
@@ -420,7 +435,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-3.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">Smart Watch Pro</p>
+                  <p class="mb-1">Smart Watch Pro</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">$98 </small>
                     <small>•</small>
@@ -433,7 +448,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-4.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">USB-C Fast Charger</p>
+                  <p class="mb-1">USB-C Fast Charger</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">$35 </small>
                     <small>•</small>
@@ -446,7 +461,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-5.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">Portable Bluetooth Speaker</p>
+                  <p class="mb-1">Portable Bluetooth Speaker</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">$65 </small>
                     <small>•</small>
@@ -468,7 +483,7 @@
 
                 <h4 class="mb-0 h5">Low Stock Products</h4>
               </div>
-              <a href="#" class="small text-primary">View All</a>
+              <a href="#" class="small text-primary text-decoration-underline">View All</a>
             </div>
 
             <ul class="list-group list-group-flush">
@@ -476,7 +491,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-8.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-1 fw-semibold">Wireless Headphones</p>
+                  <p class="mb-1">Wireless Headphones</p>
                   <small>ID: #554433</small>
                 </div>
                 <div class="d-flex flex-column gap-0 align-items-center">
@@ -488,7 +503,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-4.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">USB-C Cable Pack</p>
+                  <p class="mb-1">USB-C Cable Pack</p>
                   <small>ID: #887766</small>
                 </div>
                 <div class="d-flex flex-column gap-0 align-items-center">
@@ -500,7 +515,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-10.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">Phone Screen Protector</p>
+                  <p class="mb-1">Phone Screen Protector</p>
                   <small>ID: #332211</small>
                 </div>
                 <div class="d-flex flex-column gap-0 align-items-center">
@@ -511,7 +526,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-4.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">Portable Charger 20000mAh</p>
+                  <p class="mb-1">Portable Charger 20000mAh</p>
                   <small>ID: #998877</small>
                 </div>
                 <div class="d-flex flex-column gap-0 align-items-center">
@@ -522,7 +537,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-6.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">Mechanical Keyboard RGB</p>
+                  <p class="mb-1">Mechanical Keyboard RGB</p>
                   <small>ID: #665544</small>
                 </div>
                 <div class="d-flex flex-column gap-0 align-items-center">
@@ -549,7 +564,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-7.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">MacBook Pro 16"</p>
+                  <p class="mb-1">MacBook Pro 16"</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">Computers </small>
                     <small>•</small>
@@ -563,7 +578,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-9.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">AirPods Pro Max</p>
+                  <p class="mb-1">AirPods Pro Max</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">Audio </small>
                     <small>•</small>
@@ -577,7 +592,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-8.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">iPad Air 11"</p>
+                  <p class="mb-1">iPad Air 11"</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">Tablets </small>
                     <small>•</small>
@@ -590,7 +605,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-3.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">Apple Watch Ultra</p>
+                  <p class="mb-1">Apple Watch Ultra</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">Wearables </small>
                     <small>•</small>
@@ -603,7 +618,7 @@
               <li class="list-group-item d-flex align-items-center gap-3">
                 <img src="./assets/images/product-6.png" class="rounded" width="48">
                 <div class="flex-grow-1">
-                  <p class="mb-0 fw-semibold">Magic Keyboard</p>
+                  <p class="mb-1">Magic Keyboard</p>
                   <div class="d-flex align-items-center gap-2 text-muted">
                     <small class="fw-semibold">Accessories </small>
                     <small>•</small>
@@ -618,7 +633,15 @@
         </div>
 
       </div>
-    </div>
+      <div class="row">
+        <div class="col-12">
+<footer class="text-center py-2 mt-6 text-secondary ">
+        <p class="mb-0">Copyright © 2026 InApp Inventory Dashboard. Developed by <a href="https://codescandy.com/" class="text-primary">CodesCandy</a> </p>
+      </footer>
+        </div>
+
+      </div>
+
     </div>
   </main>
 
