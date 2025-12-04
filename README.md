@@ -5,7 +5,7 @@ Inventory app template
 
 1. Clone or download the repository
 2. Install dependencies: `npm install`
-3. Run the development server: `npm start`
+3. Run the development server: `npm dev`
 4. Open your browser and navigate to `http://localhost:3000`
 
 ## Features
@@ -44,6 +44,6 @@ inapp/
 
 For support, please reach out to:
 
-- Contact us: [support@example.com](https://codescandy.com/contact-us/)
+- Contact us: [Codescandy](https://codescandy.com/contact-us/)
 
 We are here to help you with any questions or issues you may have!
