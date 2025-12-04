@@ -22,16 +22,15 @@ Inventory app template
 ```
 inapp/
 ├── src/
-│   ├── components/      # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── services/       # API and business logic
-│   ├── styles/         # CSS and styling
-│   ├── utils/          # Helper functions
-│   └── App.js          # Main app component
-├── public/             # Static assets
+│   ├── assest/         # Static assets
+│   │   ├── images/     # Images
+│   │   ├── js/         # JS
+│   │   ├── scss/       # CSS and styling
+│   └── Pages           # All Pages
+├── vite.config.js/     # Config Files
 ├── package.json        # Project dependencies
-├── README.md          # Documentation
-└── .gitignore         # Git ignore file
+├── README.md           # Documentation
+└── .gitignore          # Git ignore file
 ```
 
 ## Requirements

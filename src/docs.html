@@ -129,8 +129,8 @@
 
   <!-- SIDEBAR -->
   <aside id="sidebar" class="sidebar">
-    <div class="logo-area">
-      <a href="index.html"><img src="./assets/images/logo-icon.svg" alt="" width="24">
+    <div class="logo-area ">
+      <a href="index.html" class="d-inline-flex"><img src="./assets/images/logo-icon.svg" alt="" width="24">
         <span class="logo-text ms-2"> <img src="./assets/images/logo.svg" alt=""></span>
       </a>
     </div>
@@ -147,7 +147,7 @@
     <li><a class="nav-link" href="404-error.html"><i class="ti ti-alert-circle"></i><span class="nav-text">404 Error</span></a>
       </li>
       <li><a class="nav-link" href="docs.html"><i class="ti ti-file-text"></i><span class="nav-text">Docs</span></a></li>
-      
+
 
       <li class="px-4 pt-4 pb-2"><small class="nav-text">Account</small></li>
       <li><a class="nav-link" href="signin.html"><i class="ti ti-logout"></i><span class="nav-text">Log in</span></a>
@@ -166,9 +166,11 @@
           <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4 gap-3">
             <div class="">
               <h1 class="fs-3 mb-1">Documentation</h1>
-              <p class="mb-0">Getting started with the project</p>
+             <p>
+          This documentation will guide you through the setup and usage of the InApp Inventory Dashboard template.
+        </p>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -177,98 +179,100 @@
             <div class="col-12">
                 <div class="">
     <div class="">
-    
 
-      <!-- Overview -->
-      <div class="mb-4">
-        <h2 class="h5">Overview</h2>
-        <p>
-          This template provides a foundation for <strong>[describe the purpose of your project]</strong>.
-        </p>
-      </div>
+
 
       <!-- Prerequisites -->
       <div class="mb-4">
-        <div class="mb-4">
+        <div class="mb-2">
         <h2 class="h5 mb-1">Prerequisites</h2>
         <p>Before you begin, ensure you have the following installed:</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Node.js (v14 or higher)</li>
-          <li class="list-group-item">npm or yarn package manager</li>
-          <li class="list-group-item">[Any other specific tools/dependencies]</li>
+          <li class="list-group-item ps-0">Node.js (v14 or higher)</li>
+          <li class="list-group-item ps-0">npm or yarn package manager</li>
+          <li class="list-group-item ps-0">[Any other specific tools/dependencies]</li>
         </ul>
       </div>
 
       <!-- Installation -->
       <div class="mb-4">
-        <h2 class="h5 mb-4">Installation</h2>
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Clone the repository or download the template</li>
-          <li class="list-group-item">Navigate to the project directory</li>
-          <li class="list-group-item">
+        <h2 class="h5 mb-2">Installation</h2>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item ps-0" >Clone the repository or download the template</li>
+          <li class="list-group-item ps-0">Navigate to the project directory</li>
+          <li class="list-group-item ps-0">
             Install dependencies:
             <pre class="bg-light border rounded p-3 mt-2"><code>npm install</code></pre>
           </li>
         </ol>
       </div>
 
-      <!-- Configuration -->
-      <div class="mb-4">
-        <h2 class="h5 mb-4">Configuration</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Update configuration files in the <code>config/</code> directory</li>
-          <li class="list-group-item">Set environment variables in <code>.env</code> file</li>
-          <li class="list-group-item">[Any other specific setup steps]</li>
-        </ul>
-      </div>
+
 
       <!-- Usage -->
-      <div class="mb-4">
-        <h2 class="h5">Usage</h2>
+      <div class="mb-6">
+        <h2 class="h5 mb-2">Usage</h2>
         <p>To start the development server:</p>
         <pre class="bg-light border rounded p-3"><code>npm run start</code></pre>
+      </div>
+    <!-- Next Steps -->
+      <div class="mb-4">
+        <h2 class="h5 mb-2">Next Steps</h2>
+        <ol class="list-group list-group-numbered list-group-flush">
+          <li class="list-group-item ps-0">Review the main entry point in <code>src/index.js</code></li>
+          <li class="list-group-item ps-0">Customize components according to your needs</li>
+          <li class="list-group-item ps-0">
+            Build for production:
+            <pre class="bg-light border rounded p-3 mt-4"><code>npm run build</code></pre>
+          </li>
+        </ol>
       </div>
 
       <!-- Project Structure -->
       <div class="mb-4">
-        <h2 class="h5 mb-4">Project Structure</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><code>/src</code> – Source code files</li>
-          <li class="list-group-item"><code>/public</code> – Static assets</li>
-          <li class="list-group-item"><code>/config</code> – Configuration files</li>
-          <li class="list-group-item">[Other relevant directories]</li>
-        </ul>
+        <h2 class="h5 mb-0">Project Structure</h2>
+        <pre>
+     <code>
+inapp/
+├── src/
+│   ├── assest/         # Static assets
+│   │   ├── images/     # Images
+│   │   ├── js/         # JS
+│   │   ├── scss/       # CSS and styling
+│   └── Pages           # All Pages
+├── vite.config.js/     # Config Files
+├── package.json        # Project dependencies
+├── README.md           # Documentation
+└── .gitignore          # Git ignore file
+     </code>
+     </pre>
       </div>
 
-      <!-- Next Steps -->
-      <div class="mb-4">
-        <h2 class="h5 mb-4">Next Steps</h2>
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Review the main entry point in <code>src/index.js</code></li>
-          <li class="list-group-item">Customize components according to your needs</li>
-          <li class="list-group-item">
-            Build for production:
-            <pre class="bg-light border rounded p-3 mt-2"><code>npm run build</code></pre>
-          </li>
-        </ol>
-      </div>
 
       <!-- Support -->
       <div class="mb-2">
         <h2 class="h5">Support</h2>
         <p>
-          For issues or questions, please refer to the documentation or create an issue in the repository.
+          For issues or questions, please refer to the documentation or create an issue in the repository. Also you can contact
+          us at <a href="https://codescandy.com/" class="text-primary">CodesCandy</a>.
         </p>
       </div>
 
     </div>
   </div>
-           
-            </div>
-            </div>
 
-   
+            </div>
+            </div>
+<div class="row">
+        <div class="col-12">
+<footer class="text-center py-2 mt-6 text-secondary ">
+        <p class="mb-0">Copyright © 2026 InApp Inventory Dashboard. Developed by <a href="https://codescandy.com/" target="_blank" class="text-primary">CodesCandy</a> </p>
+      </footer>
+        </div>
+
+      </div>
+
     </div>
   </main>
 
